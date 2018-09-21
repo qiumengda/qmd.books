@@ -1,0 +1,9 @@
+
+uboot-2011.09
+sudo dd if=boot0_sdcard_sun8iw7p1.bin of=/dev/sd* bs=1024 seek=8
+sudo dd if=u-boot-sun8iw7p1.bin of=/dev/sd* bs=1024 seek=16400
+
+uboot-2017.03
+sudo dd if=/dev/zero of=/dev/sd* bs=1k seek=8 count=1015
+sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sd* bs=1k seek=8
+
